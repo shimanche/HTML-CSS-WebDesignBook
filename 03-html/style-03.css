@@ -1,0 +1,152 @@
+body {
+  background-color: rgb(248, 213, 164);
+  font-size: 16px;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 1280px;
+  margin: 0 auto 44px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #7c5d48;
+  border-bottom: 2px solid #7c5d48;
+  background-color: rgba(255, 255, 255, 0.42);
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+header nav ul li :hover {
+  text-decoration: underline double;
+}
+
+div {
+  width: 1280px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  flex-basis: 920px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 62px 72px 32px 72px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+}
+
+aside {
+  flex-basis: 284px;
+}
+
+aside nav {
+  border-radius: 16px;
+  background-color: #ffffff;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+
+aside nav a {
+  color: #7c5d48;
+}
+
+aside nav h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+
+aside nav ul {
+  font-size: 14px;
+  /* background-color: #333333; */
+}
+
+.categoryNav ul li {
+  list-style-type: square;
+  color: #7c5d48;
+  margin: 0 0 16px 20px;
+}
+
+.recentNav ul li {
+  list-style-type: none;
+  border-bottom: 1px solid #7c5d48;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.recentNav ul {
+  height: 240px;
+  overflow: hidden scroll;
+}
+
+article h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+article h3{
+  font-size: 23px;
+  border-bottom: 2px #91c777 solid;
+  margin-bottom: 20px;
+  background-image: url("./img/h3.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 50px auto;
+  padding:  20px 20px 10px 50px;
+}
+
+article img {
+  opacity: 0.5;
+  width: 600px;
+  margin: auto;
+  display: block;
+}
+
+.postdate{
+  margin-bottom: 20px;
+}
+
+.eyecatch{
+  margin-bottom: 20px;
+}
+
+time {
+  background-color: #91c777;
+  border-radius: 0px 22px 22px 22px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 13px 25px 20px 20px;
+  display: inline-block;
+}
+
+article section p{
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+footer{
+  background-color: #7c5d48;
+  padding: 20px 20px 20px;
+  text-align: center;
+  color: #ffffff;
+}
