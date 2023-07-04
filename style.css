@@ -1,152 +1,264 @@
 body {
-  background-color: rgb(248, 213, 164);
-  font-size: 16px;
-  color: #333333;
+  font-family: "Sawarabi Mincho", serif;
+  font-size: 18px;
+  color: #121212;
 }
 
-a {
-  text-decoration: none;
+.innerWrap {
+  /* border: 4px solid lightblue; */
+  width: 1240px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
 }
 
 header {
-  width: 1280px;
-  margin: 0 auto 44px;
+  background: url("./img/header.png") no-repeat right center/cover;
+}
+
+header .innerWrap {
+  height: 720px;
+  position: relative;
 }
 
 header h1 {
+  margin-top: 120px;
+}
+
+header .scroll {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 header nav ul {
   display: flex;
-  justify-content: center;
-  border-top: 2px solid #7c5d48;
-  border-bottom: 2px solid #7c5d48;
-  background-color: rgba(255, 255, 255, 0.42);
+
+  margin: 5px auto;
+
+  justify-content: space-around;
+  width: 1280px;
+  padding: 10px 200px;
 }
 
 header nav ul li {
-  margin: 0 20px;
-}
-header nav ul li a {
-  font-size: 22px;
-  font-weight: bold;
-  color: #7c5d48;
-}
-header nav ul li :hover {
-  text-decoration: underline double;
+  list-style: none;
 }
 
-div {
-  width: 1280px;
-  margin: 0 auto 50px;
-  display: flex;
-  justify-content: space-between;
+header nav ul li:hover {
+  text-decoration: underline;
 }
 
-main {
-  flex-basis: 920px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 62px 72px 32px 72px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+header nav ul a {
+  text-decoration: none;
+  color: #121212;
 }
 
-aside {
-  flex-basis: 284px;
+.msgSec {
+  background-color: #fbfaf7;
 }
 
-aside nav {
-  border-radius: 16px;
-  background-color: #ffffff;
-  padding: 24px 28px;
-  margin-bottom: 24px;
-}
-
-aside nav a {
-  color: #7c5d48;
-}
-
-aside nav h2 {
-  margin-bottom: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #7c5d48;
-}
-
-aside nav ul {
-  font-size: 14px;
-  /* background-color: #333333; */
-}
-
-.categoryNav ul li {
-  list-style-type: square;
-  color: #7c5d48;
-  margin: 0 0 16px 20px;
-}
-
-.recentNav ul li {
-  list-style-type: none;
-  border-bottom: 1px solid #7c5d48;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.recentNav ul {
-  height: 240px;
-  overflow: hidden scroll;
-}
-
-article h2 {
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-article h3{
-  font-size: 23px;
-  border-bottom: 2px #91c777 solid;
-  margin-bottom: 20px;
-  background-image: url("./img/h3.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 50px auto;
-  padding:  20px 20px 10px 50px;
-}
-
-article img {
-  opacity: 0.5;
-  width: 600px;
-  margin: auto;
-  display: block;
-}
-
-.postdate{
-  margin-bottom: 20px;
-}
-
-.eyecatch{
-  margin-bottom: 20px;
-}
-
-time {
-  background-color: #91c777;
-  border-radius: 0px 22px 22px 22px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  padding: 13px 25px 20px 20px;
-  display: inline-block;
-}
-
-article section p{
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-footer{
-  background-color: #7c5d48;
-  padding: 20px 20px 20px;
+.msgSec p {
   text-align: center;
-  color: #ffffff;
+  line-height: 1.75;
+  padding-bottom: 20px;
+}
+
+.msgSec p.illust {
+  position: relative;
+}
+
+.msgSec p.illust::before {
+  /* content: url("./img/マイプロジェクト-1\ \(2\).png"); */
+  content: "";
+  left: -100;
+  top: -20;
+  width: 100%;
+  height: 100%;
+  background: url("./img/マイプロジェクト.png") no-repeat center;
+  position: absolute;
+
+}
+
+.dateSec {
+  background-color: #ffffff;
+  margin-bottom: 480px;
+}
+
+.dateSec::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./img/bgcover.png") no-repeat center/cover;
+  z-index: -1;
+}
+
+.dateSec .layoutWrap {
+  display: flex;
+}
+
+.dateSec .layoutWrap > p {
+  flex-basis: 735px;
+}
+
+.dateSec .layoutWrap > div {
+  flex-basis: 465px;
+  padding-top: 100px;
+}
+.dateSec .dateTime {
+  font-size: 50px;
+  margin-left: -100px;
+  background-color: #fbfaf7;
+  padding: 30px;
+}
+.word1 {
+  font-size: 50px;
+}
+.word2 {
+  font-size: 40px;
+}
+.word3 {
+  font-size: 60px;
+}
+
+.accessSec {
+  margin-top: 70px;
+}
+.accessSec h3 {
+  font-size: 40px;
+}
+.accessSec ul li {
+  list-style: none;
+}
+.accessSec p {
+  padding-bottom: 20px;
+}
+
+.formSec {
+  background-color: antiquewhite;
+  padding-bottom: 60px;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[name="message"] {
+  background-color: #fbfaf7;
+  width: 100%;
+  margin-top: 5px;
+  padding: 4px 8px;
+}
+
+.attendRadio {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.attendRadio label {
+  margin: 5px 30px;
+}
+
+textarea {
+  height: 400px;
+  margin-bottom: 40px;
+}
+.submitBtn {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: rgb(14, 14, 14);
+  padding: 10px 80px;
+  color: #fbfaf7;
+}
+
+form > p {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(187, 147, 102);
+}
+
+@media screen and (max-width: 640px) {
+  .dateSec .layoutWrap{
+    display: block;
+  }
+
+  .innerWrap,header nav ul,form{
+    width: 100%;
+  }
+
+  header nav ul li{
+    margin: 10px 40px;
+  }
+
+  header h1 img,
+  .msgSec p.illust img,
+  .dateSec .layoutWrap >p img{
+    width: 100%;
+  }
+
+  .msgSec p.illust::before{
+    left: 0px;
+    transform: scale(0.7);
+
+  }
+  header {
+    background: url("./img/header.png") no-repeat left top/cover;
+  }
+
+  header .innerWrap{
+    height: 90vh;
+  }
+
+  .msgSec p{
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .msgSec{
+    padding-bottom: 20px;
+  }
+
+  .dateSec .dateTime{
+    font-size: 36px;
+    padding: 20px 20px;
+    margin: 0 0 0 25%;
+  }
+  .word1{font-size: 25px;}
+  .word2{font-size: 25px;}
+  .word3{font-size: 36px;}
+
+  .dateSec{
+    padding-bottom: 100px;
+    margin-bottom: 250px;
+  }
 }

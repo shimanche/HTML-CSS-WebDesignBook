@@ -7,89 +7,94 @@
     <!-- reset.css ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>3-HTML-CSS-Design</title>
+    <title>4-HTML-CSS-Design</title>
   </head>
   <body>
     <header>
-      <h1><img src="./img/My project-1.png" alt="dog" /></h1>
-      <nav>
-        <ul>
-          <li><a href="#"> HOME</a></li>
-          <li><a href="#"> ABOUT</a></li>
-          <li><a href="#"> BLOG</a></li>
-        </ul>
-      </nav>
+      <div class="innerWrap">
+        <h1>Welcome to Our Wedding Party</h1>
+        <nav>
+          <ul>
+            <li><a href="#msgArea">Message</a></li>
+            <li><a href="#dateArea">Date</a></li>
+            <li><a href="#formArea">Form</a></li>
+          </ul>
+        </nav>
+        <p class="scroll">Scroll</p>
+        <br />
+      </div>
     </header>
-    <div>
-      <main>
-        <article>
-          <h2>犬のお話</h2>
-          <p class="postdate">
-            <time datetime="2021-08-08T12:03"> 3021年8月8日12時3分 </time>
-          </p>
-          <p class="eyecatch">
-            <img src="./img/h.png" alt="onion" />
-          </p>
+    <main>
+      <section class="msgSec" id="msgArea">
+        <div class="innerWrap">
+          <h2>Message</h2>
           <p>
-            犬といえば近所で生まれた犬をもらって犬を番犬として外で飼うことが当たり前でした。しかし、近頃はペットショップなどで様々な種類の中から選び、家族の一員として室内で飼う方が増えてきています。
-            一方行政に寄せられる犬に関する苦情内容は、放し飼いからフンの不始末や犬の鳴き声などに変化しています。
+            いつも、楽天市場で買い物してました。<br />
+            しかし、最近Yahooショッピングで買い物するようになりました。<br />
+            その理由は、Yahooショッピングの高還元率とわかりやすさ。<br />
           </p>
-          <section>
-            <h3>今どきは、オシッコやウンチはおうちで済ませる</h3>
+          <p>市場と比較しながら、その方法をお伝えします。<br /></p>
+          <p class="illust">
+            <img src="./img/My project-1.png" alt="" />
+          </p>
+        </div>
+      </section>
+      <section class="dateSec" id="dateArea">
+        <div class="innerWrap">
+          <h2>Save the Date</h2>
+          <div class="layoutWrap">
             <p>
-              散歩の目的は犬の排せつではなく、運動とストレスの解消、そして社会環境に慣れさせることです。
-              　本来、道路・公園等は排せつをさせる場所ではありません。自宅の決まった場所で排せつする習慣をつけておくと、道路などを汚すことがないだけでなく、排せつをしたくて散歩を要求することもありません。
+              <img src="./img/img-sakura-1.png" alt=""  width="500"/>
             </p>
-          </section>
-          <section>
-            <h3>8:30～12:30 スーパーや道の駅への出荷</h3>
-            <p>物語を書く。
-              号泣するほどの衝撃、そして未体験の豊かさ、金胡麻担々麺<br>逆に、これを利用すれば高還元率を目指せます。
-              しかし、送料とか色々考え出すと、頭が疲れてきます。</p>
-          </section>
-          <section>
-            <h3>12:30～18:00 畑作業と夜ごはん</h3>
-            <p>例えば、「この商品は○○です！」と書くと、どうしても宣伝文っぽいイメージになりますよね？<br>楽天市場で最も苦手なのが、ポイント還元率のわかりにくさ。</p>
-          </section>
-          <section>
-            <h3>18:30～ お風呂・就寝</h3>
-            <p>その理由は、Yahooショッピングの高還元率とわかりやすさ。
-              楽天市場と比較しながら、その方法をお伝えします。
+            <div>
+              <p class="dateTime">
+                2023.8.8 <span class="word1">Thu</span><br />
+                <span class="word2">Start</span>
+                <span class="word3">18:30-</span><br />
               </p>
-          </section>
-        </article>
-      </main>
-      <aside>
-        <nav class="categoryNav">
-          <h2>Category</h2>
-          <ul>
-            <li><a href="#"> 犬のお話(4) </a></li>
-            <li><a href="#"> 日常(4) </a></li>
-            <li><a href="#">ノウハウ(5) </a></li>
-          </ul>
-        </nav>
-        <nav class="recentNav">
-          <h2>Recent Articles</h2>
-          <ul>
-            <li><a href="#">飼育をレクチャー </a></li>
-            <li><a href="#">野菜作り </a></li>
-            <li><a href="#">肥料の種類 </a></li>
-            <li>
-              <a href="#"
-                >お家でもできる！プランター栽培のポイント
-                簡単にんじん料理をご紹介！
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                >お家でもできる！プランター栽培のポイント
-                簡単にんじん料理をご紹介！
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-    </div>
-    <footer>【画像：バナー】 © 3021 FARM CAPYZOU</footer>
+              <section class="accessSec">
+                <h3>Access</h3>
+                <p>
+                  レンガ街ストリート1-2-3<br>
+                  Ristorante Capita にて<br>
+                  03-XXXX-XXXX<br>
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="formSec" id="formArea">
+        <div class="innerWrap">
+          <form>
+            <h2>RSVP</h2>
+            <form action="" method="">
+              <p class="attendRadio">
+                <label>
+                  <input
+                    type="radio"
+                    name="attend"
+                    value="ご出席"
+                    checked="checked"
+                  />
+                  ご出席
+                </label>
+                <label>
+                  <input type="radio" name="attend" value="ご欠席" />
+                  ご欠席
+                </label>
+              </p>
+              <p>名前<input type="text" name="user_name" /></p>
+              <p>メールアドレス<input type="email" name="user_mail" /></p>
+              <p>メッセージ<textarea name="message"></textarea></p>
+              <p class="submitBtn"><input type="submit" value="send" /></p>
+            </form>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <p>@copy write</p>
+      </footer>
+    </main>
   </body>
 </html>

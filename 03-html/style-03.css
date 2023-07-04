@@ -103,7 +103,7 @@ article h2 {
   margin-bottom: 8px;
 }
 
-article h3{
+article h3 {
   font-size: 23px;
   border-bottom: 2px #91c777 solid;
   margin-bottom: 20px;
@@ -111,7 +111,7 @@ article h3{
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 50px auto;
-  padding:  20px 20px 10px 50px;
+  padding: 20px 20px 10px 50px;
 }
 
 article img {
@@ -121,11 +121,11 @@ article img {
   display: block;
 }
 
-.postdate{
+.postdate {
   margin-bottom: 20px;
 }
 
-.eyecatch{
+.eyecatch {
   margin-bottom: 20px;
 }
 
@@ -139,12 +139,12 @@ time {
   display: inline-block;
 }
 
-article section p{
+article section p {
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
-footer{
+footer {
   background-color: #7c5d48;
   padding: 20px 20px 20px;
   text-align: center;
